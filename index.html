@@ -10,12 +10,8 @@
     <link type="text/css" rel="stylesheet" href="css/fontello.css" />
     <link type="text/css" rel="stylesheet" href="css/skeleton.css" />
     <link type="text/css" rel="stylesheet" href="css/base.css" />
-    <link type="text/css" rel="stylesheet" href="css/fotorama.css" />
-    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
-    <link type="text/css" rel="stylesheet" href="css/datepicker.css" />
-    <link type="text/css" rel="stylesheet" href="css/timepicker.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -92,19 +88,11 @@
                             </div>
                         </div>
                         <div class="makeup_fl_content_wrap">
-                            <div class="makeup_fl_fotorama">
-                                <div class="fotorama" data-autoplay="4000" data-loop="true" data-keyboard="true" data-arrows="true" data-click="true" data-swipe="true" data-stopautoplayontouch="false" data-transition="dissolve" data-fit="cover" data-width="100%" >
-                                    
-								  	<img src="img/massage-belgrade2.jpg" width="144" height="96" alt="" />
-								 
-                                   
-								  	<img src="img/massage-belgrade3.jpg" width="144" height="96" alt="" />
-							
-                                  
-								  	<img src="img/massage-belgrade4.jpg" width="144" height="96" alt="" />
-								  
-                                </div>
-                            </div>
+                            <ul class="rslides">
+                                <li><img src="img/massage-belgrade2.jpg" alt=""></li>
+                                <li><img src="img/massage-belgrade4.jpg" alt=""></li>
+                                <li><img src="img/massage-belgrade7.jpg" alt=""></li>
+                            </ul>
                             <!-- PACKAGE LIST -->
                             <div class="makeup_fl_package_list makeup_fl_masonry">
                                 <a href="anticelulit-masaza.html" class="link-mp">
@@ -268,6 +256,16 @@
     <script type="text/javascript" src="js/plugins.js"></script>
     <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
     <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="./js/responsiveslides.min.js"></script>
+    <script>
+    $(function() {
+        $(".rslides").responsiveSlides({
+           nav: true,
+           prevText: "<",
+           nextText: ">"
+        });
+    });
+    </script>
     <!-- /SCRIPTS -->
 </body>
 
